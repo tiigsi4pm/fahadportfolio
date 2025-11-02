@@ -79,13 +79,13 @@ export default function DownloadCV() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
+    <main className="min-h-screen bg-linear-to-br from-gray-900 to-black text-white">
       <Header />
       
       <div className="container mx-auto px-4 py-16">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
             Download My CV
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
@@ -97,7 +97,7 @@ export default function DownloadCV() {
             <button
               onClick={handleDownload}
               disabled={isDownloading}
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-purple-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
+              className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-purple-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
             >
               {isDownloading ? (
                 <>
@@ -127,7 +127,7 @@ export default function DownloadCV() {
             <div className="max-w-md mx-auto">
               <div className="w-full bg-gray-700 rounded-full h-2">
                 <div 
-                  className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all duration-300"
+                  className="bg-linear-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all duration-300"
                   style={{ width: `${downloadProgress}%` }}
                 />
               </div>
@@ -238,7 +238,7 @@ export default function DownloadCV() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl p-8 border border-purple-500/30">
+          <div className="bg-linear-to-r from-purple-600/20 to-blue-600/20 rounded-2xl p-8 border border-purple-500/30">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Ready to Work Together?
             </h3>
