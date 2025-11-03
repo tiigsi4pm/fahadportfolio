@@ -43,7 +43,7 @@ export default function Home() {
         <section className="min-h-screen flex items-center justify-center px-4">
           <div className="text-center">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Fahad Farhan
+              Fahad Farhan Adan 
             </h1>
             <p className="text-2xl md:text-3xl text-gray-200 mb-6">
               Full Stack Developer
