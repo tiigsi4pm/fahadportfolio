@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Orb from './components/orb';
 import Header from './components/Header';
 import Section from './components/Section';
 import SkillBar from './components/SkillBar';
@@ -27,14 +26,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Orb Background */}
-      <div className="fixed inset-0 z-0">
-        <Orb hue={0} hoverIntensity={0.2} rotateOnHover={true} />
-      </div>
-
-      {/* Dark Overlay for Readability */}
-      <div className="fixed inset-0 z-1 bg-black/30" />
-
       {/* Content */}
       <div className="relative z-10">
         <Header />
@@ -42,8 +33,8 @@ export default function Home() {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center px-4">
           <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Fahad Farhan Adan 
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              Fahad Farhan
             </h1>
             <p className="text-2xl md:text-3xl text-gray-200 mb-6">
               Full Stack Developer
@@ -55,7 +46,7 @@ export default function Home() {
         </section>
 
       {/* TrueFocus Standalone Section */}
-<section className="py-20 bg-linear-to-br from-gray-900 to-black">
+<section className="py-20 bg-gradient-to-br from-gray-900 to-black">
   <div className="container mx-auto px-4">
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-white mb-4">
